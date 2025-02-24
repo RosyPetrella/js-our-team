@@ -51,13 +51,13 @@ function getmemberMarkup(memberObj) {
   console.log(name, role, email, img);
 
   const markup = `
-    <div class="card bg-black mb-3  " style="max-width: 540px;">
+    <div class="card  mb-3  " style="max-width: 540px;">
             <div class="row  ">
-              <div class="col-md-4 gx-3">
+              <div class="col-md-4 gx-3 ">
                 <img src="${img}" class="img-fluid" alt="...">
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
+              <div class="col-md-8 bg-black">
+                <div class="card-body pr-0">
                   <h5 class="card-title text-light">${name}</h5>
                   <p class="card-text text-light">${role}</p>
                   <p class="card-text "><small class="text-primary">${email}</small></p>
